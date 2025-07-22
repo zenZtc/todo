@@ -36,7 +36,7 @@ const Todolist = () => {
             let arr = localStorage.getItem("arr");
             // console.log(arr);
             let windows
-            if (arr[0]) {
+            if (arr) {
                 windows = JSON.parse(arr);
                 windows = windows?.filter((item) => item.date == todaysDate)
                 if (search != "") {
@@ -48,7 +48,7 @@ const Todolist = () => {
             let arr = localStorage.getItem("complete")
             console.log(arr);
             let windows
-            if (arr[0]) {
+            if (arr) {
                 windows = JSON.parse(arr);
                 windows = windows?.filter((item) => item.date == todaysDate)
                 if (search != "") {
