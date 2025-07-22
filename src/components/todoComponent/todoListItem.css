@@ -1,0 +1,380 @@
+.itemConatiner {
+	margin-top: 10px;
+	background-color: #ffffff;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 20px;
+	gap: 20px;
+	height: 80vh;
+	overflow-y: scroll;
+}
+
+.Itemheader {
+	width: 100%;
+	display: flex;
+	/* background-color: green; */
+	justify-content: space-between;
+	/* overflow: hidden ; */
+	gap: 40px;
+	/* flex-direction: row-reverse ; */
+}
+
+.Itemheader>h2 {
+	background-color: green;
+}
+
+.itemConatiner>div {
+	width: 370px;
+	padding: 10px;
+	border-radius: 10px;
+	height: 220px;
+	position: relative;
+	overflow: hidden;
+}
+
+.closebuttonContainer {
+	position: relative;
+	/* background-color: yellow; */
+	display: flex;
+	justify-content: end;
+}
+
+.CLoseIcon {
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(207, 212, 197);
+	border-radius:50%;
+}
+
+.CLoseIcon:hover {
+	background-color: rgb(159, 159, 159);
+}
+
+.menuDiv {
+	background-color: rgb(0, 0, 0, 0.8);
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.buttonComtainer {
+	width: auto;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	top: 35%;
+}
+
+.buttonComtainer>button {
+
+	width: 100px;
+	height: 40px;
+	font-weight: 600;
+	font-family: inherit;
+	border-radius: 10px;
+	border: none;
+	/* transform: scale(1); */
+	/* display: inline-block; */
+}
+
+
+
+.buttonComtainer>button:nth-child(2) {
+	background-color: rgb(65, 128, 222);
+}
+
+/* .buttonComtainer>button:nth-child(3) {
+	background-color: rgb(222, 65, 65);
+
+} */
+
+
+
+.buttonComtainer>button:hover {
+	animation: zoomIn forwards 500ms;
+}
+
+@keyframes zoomIn {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+.titleInput {
+	display: flex;
+	width: 90%;
+}
+
+.editContainer {
+	position: relative;
+	width: 10%;
+}
+
+.EditButton {
+	height: 100%;
+	aspect-ratio: 1/1;
+	background-color: white;
+	position: absolute;
+	/* left: 100%; */
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleInput>h2 {
+	width: 90%;
+	/* background-color: blue; */
+	padding: 5px;
+	overflow: hidden;
+	position: relative;
+	height: 30px;
+}
+
+h2>span {
+	background-color: forestgreen;
+	white-space: nowrap;
+	position: absolute;
+	/* left: 500px; */
+	animation: movement 5s forwards infinite;
+}
+
+@keyframes movement {
+	0% {
+		left: 200px;
+	}
+
+	100% {
+		left: -200px;
+	}
+}
+
+
+.Itemheader>input {
+	width: 20px;
+	aspect-ratio: 1/1;
+	display: inline-block;
+}
+
+.Itembody {
+    height: 85%; /* Take full height of parent */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevent overflow from this container */
+}
+
+.descContainer {
+    flex: 1; 
+    overflow-y: auto; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+}
+
+.description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0; 
+}
+
+.DateAndTimeContainer {
+    flex-shrink: 0; 
+    position: relative;
+    
+}
+
+.DateAndTimeContainer > p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2px 0; 
+}
+
+.DateAndTime {
+    margin-right: 10px;
+}
+
+
+/* .EditForm{
+  background-color: yellow;
+  position: absolute;
+  left: 100px;
+  width: 100%;
+} */
+
+
+
+
+/* Extra-wide screens */
+@media screen and (min-width: 1600px) {
+	.itemConatiner {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* Desktop & large laptops */
+@media screen and (min-width: 1321px) and (max-width: 1484px) {
+	.itemConatiner {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1320px) {
+	.itemConatiner {
+		grid-template-columns: repeat(2, 1fr);
+		/* gap: 20px; */
+	}
+
+	.Itemheader {
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	.titleInput {
+		display: flex;
+		width: 50%;
+		gap: 10px;
+	}
+
+	.itemConatiner>div {
+		width: 90%;
+		margin: 20px auto;
+		height: 220px;
+	}
+}
+
+/* Phablets and large phones */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+	.itemConatiner {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 10px;
+		justify-content: center;
+		/* background-color: yellow; */
+	}
+
+	.itemConatiner>div {
+		width: 80%;
+		margin: 10px auto;
+	}
+
+	.titleInput>h2 {
+		width: 100%;
+		font-size: 1rem;
+		height: auto;
+	}
+
+	.EditButton {
+		position: static;
+		border-radius: 8px;
+	}
+
+	.DateAndTimeContainer {
+		position: relative;
+		top: 100px;
+		background-color: transparent;
+
+	}
+
+	.description,
+	.DateAndTimeContainer>p {
+		font-size: 0.9rem;
+	}
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+	.itemConatiner {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 10px;
+	}
+
+	.itemConatiner>div {
+		width: 100%;
+		height: auto;
+		padding: 8px;
+		border-radius: 8px;
+	}
+
+	.Itemheader {
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.titleInput {
+		width: 100%;
+		flex-direction: column;
+		gap: 6px;
+		align-items: flex-start;
+	}
+
+	.titleInput>h2 {
+		width: 100%;
+		font-size: 1rem;
+		height: auto;
+		padding: 4px;
+	}
+
+	h2>span {
+		animation: none;
+		position: static;
+		white-space: normal;
+		background-color: transparent;
+	}
+
+	.Itemheader>input {
+		width: 16px;
+		height: 16px;
+	}
+
+	.editContainer {
+
+		width: 20%;
+		background-color: yellow;
+	}
+
+	.EditButton {
+		position: static;
+		aspect-ratio: unset;
+		border-radius: 8px;
+		padding: 6px;
+	}
+
+	.Itembody {
+		margin-top: 6px;
+	}
+
+	.description {
+		font-size: 0.85rem;
+		font-weight: 400;
+	}
+
+	.DateAndTimeContainer {
+		position: static;
+		margin-top: 4px;
+		background-color: transparent;
+	}
+
+	.DateAndTimeContainer>p {
+		font-size: 0.75rem;
+		font-weight: 400;
+		margin: 2px 0;
+	}
+
+	.DateAndTime {
+		margin-right: 6px;
+	}
+}

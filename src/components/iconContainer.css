@@ -1,0 +1,76 @@
+.iconConatiner{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.iconConatiner > div{
+    display: flex;
+    padding: 5px;
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;   
+    background-color: #bbbfbf;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.iconConatiner > div:hover{
+    /* background-color: green; */
+    animation: divhover1 1s forwards 1;
+}
+
+@keyframes divhover1 {
+    100%{
+        background-color: #f2f2f2;
+    }
+}
+
+.fontIcon{
+    animation: appearIcon 2s forwards 1;
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.iconConatiner > div>div{
+    position: relative;
+    /* left: 0; */
+    /* width: 20px; */
+    height: 30px;
+    background-color: yellow;
+    /* overflow: hidden; */
+}
+
+
+.iconConatiner >div > p{
+    /* position: absolute; */
+    animation: para 3s forwards 1;
+}
+
+@keyframes appearIcon {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+@keyframes para {
+    0%{
+        left: -60px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}

@@ -1,0 +1,138 @@
+.MainContainer2 {
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+
+.AddTaskForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0px;
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.honer {
+    background-color: hotpink;
+}
+
+.formContainer {
+    width: 350px;
+    aspect-ratio: 4/5;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed;
+}
+
+.formContainerHeader>h2 {
+    font-weight: 600;
+}
+
+.FormInputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+    
+}
+
+.FormInputs>input{
+    width: 90%;
+    height: 35px;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    /* color: yellow; */
+    font-weight: 500;
+    padding: 0px 5px;
+}
+
+.FormInputs>textarea{
+    width: 85%;
+    height: 100px;
+    padding: 5px;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.FormFooter{
+    /* background-color: hotpink; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.FormFooter>button{
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem ;
+    /* width: ; */
+}
+
+.FormFooter>button:last-child{
+    background-color: rgb(0, 102, 255);
+}
+
+.Editform{
+    position: fixed;
+    /* left: 300px; */
+    /* background-color: lightblue; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 54, 54,0.7);
+}
+
+.FormToedit{
+    width: 30%;
+    background-color: yellow;
+    padding: 20px;
+    position: relative;
+    margin: 100px auto 0px;
+    border-radius: 10px;
+}
+
+.editHeader>h1{ 
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+.forminputs{
+    display: flex ;
+    justify-content: center;
+    margin: 20px;
+}
+.forminputs>input{
+    width: 60%;
+    height: 35px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.Buttonsection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Buttonsection>button{
+    width: 60px;
+    height: 30px;
+    
+}

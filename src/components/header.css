@@ -1,0 +1,60 @@
+.headContainer {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    background-color: #bbbfbf;
+    box-sizing: border-box;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Heading {
+    width: fit-content;
+}
+.headingAppearence{
+    animation: headingAppear 1s ease-in forwards 1 ;
+}
+@keyframes headingAppear {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.headingDisAppearence{
+    animation: headingDisAppear 1s ease-out forwards 1 ;
+}
+@keyframes headingDisAppear {
+    100%{
+        opacity: 0;
+    }
+}
+.profile {
+    width: 10%;
+    width: fit-content;
+    height: 100%;
+    /* background-color: lightcoral; */
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.Profilepic{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: yellow;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.Profilepic>img{
+    height: 100%;
+    width: 100%;
+
+}
+.Icon{
+    font-size: 1.5rem;
+    display: inline-block;
+}
