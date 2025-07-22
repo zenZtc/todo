@@ -29,5 +29,5 @@ A simple and responsive Todo List application built with **React** and **Vite**.
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/your-username/todo-list-react.git
+git clone https://github.com/zenZtc/todo.git
 cd todo-list-react
